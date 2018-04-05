@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="angularApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular app</title>
+        <script src="lib/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers/angularCtrl.js"></script>
+    </head>
+    <body ng-controller="AngularCtrl">
+        <h1>{{tutorialsObject.title}}</h1>
+        <p>Id No: {{2 + 2}}</p>
+        <p>Author: {{name}}</p>
+        <p><b>Binding: {{tutorialsObject.bindOutput | currency: "#": "4"}}</b></p>
+        <span><button ng-click="addMe()">Eval</button></span>
+        <input type="text" ng-model="name">
+        <chaitu-message></chaitu-message>
+    </body> 
+</html>
